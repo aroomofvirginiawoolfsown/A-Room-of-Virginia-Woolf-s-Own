@@ -616,3 +616,20 @@ a.btn:hover,
   background: #3a3a3a !important; 
   box-shadow: none !important;   
 }
+
+/* === Unify subtitle styles (About, XML, RDF, HTML) === */
+#about,
+#items,
+#metadata,
+#theoretical-model,
+#conceptual-map,
+#xml-tei,
+#rdf,
+#xslt-html {
+  font-style: italic;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
