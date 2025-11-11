@@ -42,6 +42,9 @@
       </ul>
     </li>
 
+    <!-- KNOWLEDGE REPRESENTATION -->
+<li><a href="#representation">KNOWLEDGE REPRESENTATION</a></li>
+
     <!-- TEAM -->
     <li><a href="#team">TEAM</a></li>
   </ul>
@@ -348,6 +351,48 @@
     </section>
   </main>
 
+
+  <!-- ============================= -->
+<!-- KNOWLEDGE REPRESENTATION SECTION -->
+<!-- ============================= -->
+<section id="representation">
+  <h2>Knowledge Representation</h2>
+
+  <p class="meta-intro">
+    This section introduces the technical implementation of the data creation process when setting the theme as Virginia Woolf and building the ontology based on Virginia Woolf–related items, from collecting resources to text encoding, representing, and organizing.
+  </p>
+
+  <!-- ===== XML/TEI ===== -->
+  <h2 id="xml-tei">XML / TEI</h2>
+  <p class="meta-intro">
+    For each item chosen, we encoded them as XML documents employing the <em>TEI (Text Encoding Initiative)</em> standard. Beyond the encoding of excerpt texts from certain important works of Virginia Woolf, we also marked images, places, musical works, and movies to build a diverse and holistic representation of Woolf’s life and her continuing cultural impact.
+  </p>
+  <p class="meta-intro">
+    Here you can find the <a href="https://github.com/SinerYuu/ISCH-A-Room-of-Virginia-Woolf-s-Own-" target="_blank">XML/TEI documents</a>.
+  </p>
+
+  <!-- ===== RDF ===== -->
+  <h2 id="rdf">RDF</h2>
+  <p class="meta-intro">
+    To represent the semantic relationships among the selected items in our Virginia Woolf ontology, we generated both <em>RDF (Resource Description Framework)</em> and <em>TTL (Turtle)</em> files. The RDF dataset was automatically produced through a Python pipeline that converts our TEI-annotated XML files into triples, following a custom mapping defined in a JSON configuration file. Additionally, each entity’s set of triples was exported into individual CSV tables for easier inspection.
+  </p>
+  <p class="meta-intro">
+    Here you can find the <a href="https://github.com/SinerYuu/ISCH-A-Room-of-Virginia-Woolf-s-Own-" target="_blank">RDF</a> and <a href="https://github.com/SinerYuu/ISCH-A-Room-of-Virginia-Woolf-s-Own-" target="_blank">TTL</a> files of our ontology. The full ontology is also showcased as a Graffoo image, which can be found in the <a href="#conceptual-map">Conceptual Map</a> section.
+  </p>
+
+  <!-- ===== HTML / XSLT ===== -->
+  <h2 id="xslt-html">HTML (via XSLT)</h2>
+  <p class="meta-intro">
+    In order to facilitate improved accessibility, readability, and interoperability within web environments, this project employs <em>XSLT (eXtensible Stylesheet Language Transformations)</em> to convert XML-encoded data into a structured and visually coherent HTML document. The XSLT stylesheet functions as a transformation layer that interprets the semantic structure of the XML source and systematically maps its hierarchical elements into corresponding HTML components.
+  </p>
+  <p class="meta-intro">
+    Through this process, the transformation not only preserves the logical organization and metadata of the original XML document but also enhances its usability by rendering the content in a web-compatible and human-readable format. Specific stylistic rules and layout conventions defined within the XSLT document govern the presentation of textual and structural features, ensuring consistency across digital representations.
+  </p>
+  <p class="meta-intro">
+    Here you can find the <a href="https://github.com/SinerYuu/ISCH-A-Room-of-Virginia-Woolf-s-Own-" target="_blank">XSLT stylesheet and resulting HTML</a>.
+  </p>
+</section>
+
 <!-- ============================= -->
 <!-- TEAM SECTION -->
 <!-- ============================= -->
@@ -438,4 +483,5 @@
   </script>
 </body>
 </html>
+
 
