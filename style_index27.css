@@ -66,7 +66,9 @@ h1 {
   color: var(--text-dim);
   text-align: right;
   margin-top: 10px;
+  font-style: italic;
 }
+
 
 /* ===== Navbar (dark dropdown) ===== */
 nav {
@@ -668,6 +670,7 @@ a.btn:hover,
   display: inline-block;
   cursor: move;
 }
+
 
 
 
